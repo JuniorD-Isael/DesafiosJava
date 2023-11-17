@@ -12,12 +12,12 @@ Cada desafio convertido está contido em um arquivo Java correspondente. Para ex
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/JuniorD-Isael/DesafiosJava
     ```
 
 2. Navegue para o diretório do desafio desejado:
     ```bash
-    cd nome-do-repositorio
+    cd DesafiosJava
     ```
 
 3. Compile o código Java:
@@ -35,5 +35,3 @@ Substitua `NomeDoArquivo` pelo nome do arquivo Java correspondente ao desafio qu
 Estes desafios foram convertidos para Java com base nos exercícios originais do Henrique Bastos, com a finalidade de oferecer uma prática adicional aos programadores que desejam explorar a linguagem Java.
 
 ---
-
-
