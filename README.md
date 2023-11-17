@@ -17,7 +17,7 @@ Cada desafio convertido está contido em um arquivo Java correspondente. Para ex
 
 2. Navegue para o diretório do desafio desejado:
     ```bash
-    cd DesafiosJava
+    cd DesafiosJava/src
     ```
 
 3. Compile o código Java:
