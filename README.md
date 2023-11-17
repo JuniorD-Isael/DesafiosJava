@@ -1,12 +1,10 @@
 # Exercícios Python para Java
 
-Este repositório contém exercícios originalmente propostos em Python pelo Henrique Bastos, agora convertidos para a linguagem Java. Esses desafios foram traduzidos e adaptados para o contexto da linguagem Java, mantendo a essência e a lógica dos problemas propostos.
+Este repositório contém exercícios originalmente propostos em Python pelo [Henrique Bastos](https://github.com/henriquebastos), agora convertidos para a linguagem Java. Esses desafios foram traduzidos e adaptados para o contexto da linguagem Java, mantendo a essência e a lógica dos problemas propostos.
 
 Os exercícios abordam diferentes conceitos de programação, incluindo manipulação de strings, estruturas de dados e lógica algorítmica.
 
-## Sobre os Exercícios
-
-Os desafios foram adaptados da versão original em Python para Java, mantendo a estrutura básica e os objetivos de cada problema. Eles proporcionam uma oportunidade para os desenvolvedores praticarem a lógica de programação e se familiarizarem com a sintaxe e as peculiaridades da linguagem Java.
+**Contribuições São Bem-Vindas!** Caso encontre alguma inconsistência nos enunciados ou queira aprimorar as explicações dos desafios, sinta-se à vontade para contribuir com correções e sugestões.
 
 ## Como Utilizar
 
@@ -38,4 +36,4 @@ Estes desafios foram convertidos para Java com base nos exercícios originais do
 
 ---
 
-© 2023 Seu Nome
+
