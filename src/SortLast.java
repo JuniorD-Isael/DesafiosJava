@@ -5,13 +5,20 @@
 // Irá retornar: [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
 // Dica: Use uma função key personalizada para extrair o último elemento de cada tupla.
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SortLast {
 
     public static List<List<Integer>> sortLast(List<List<Integer>> tuples) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        List<List<Integer>> copyTuples = new ArrayList<>(tuples);
+
+        copyTuples.sort((a,b) -> {
+            return Integer.compare(a.get(a.size()-1), b.get(b.size()-1));
+        });
+
+        return copyTuples;
     }
 
     // Função de teste

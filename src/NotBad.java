@@ -5,11 +5,28 @@
 // por 'good' e retorne a string resultante.
 // Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 
+
 public class NotBad {
 
     public static String notBad(String s) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        try {
+            String[] divisionWithNot = s.split("not");
+            if (!divisionWithNot[1].contains("bad") || divisionWithNot[1].length() == 0) {
+                throw new RuntimeException();
+            }
+            StringBuilder textReturn = new StringBuilder(divisionWithNot[0]);
+            
+            textReturn.append("good");
+
+            char lastChar = s.charAt(s.length()-1);
+            if (!Character.isLetterOrDigit(lastChar)) {
+                textReturn.append(lastChar);
+            }
+            return textReturn.toString();
+        } catch (RuntimeException e) {
+            return s;
+        }
     }
 
     // Função de teste

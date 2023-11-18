@@ -11,7 +11,11 @@ public class FixStart {
 
     public static String fixStart(String s) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        char fristChar = s.charAt(0);
+        StringBuilder newFixString = new StringBuilder(s.replaceAll(String.valueOf(fristChar), "*"));
+        newFixString.setCharAt(0, fristChar);
+
+        return newFixString.toString();
     }
 
     // Função de teste

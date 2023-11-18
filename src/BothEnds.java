@@ -8,7 +8,12 @@ public class BothEnds {
 
     public static String bothEnds(String s) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        StringBuilder bothEndText = new StringBuilder();
+        try {
+            bothEndText.append(s.substring(0, 2));
+            bothEndText.append(s.substring(s.length()-2, s.length()));
+        } catch (IndexOutOfBoundsException e) {}
+        return bothEndText.toString();
     }
 
     // Função de teste
