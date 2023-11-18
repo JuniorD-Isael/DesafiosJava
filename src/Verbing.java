@@ -9,7 +9,16 @@ public class Verbing {
 
     public static String verbing(String s) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        if (s.length() < 3) {   
+            return s;
+        }
+        String removeIng = s.replaceAll("ing", "");
+        StringBuilder textReturn = new StringBuilder(removeIng);
+        textReturn.append("ing");
+        if (removeIng.length() < s.length()) {
+            textReturn.append("ly");
+        }
+        return textReturn.toString();
     }
 
     // Função de teste

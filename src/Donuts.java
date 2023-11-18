@@ -9,7 +9,14 @@
 public class Donuts {
 
     public static String donuts(int count) {
-        return null;
+        // +++ SUA SOLUÇÃO +++
+        StringBuilder donutsMsg = new StringBuilder();
+        if (count >= 10) {
+            donutsMsg.append("Number of donuts: many");
+        }else{
+            donutsMsg.append(String.format("Number of donuts: %d", count));
+        }
+        return donutsMsg.toString();
     }
 
     // Função de teste

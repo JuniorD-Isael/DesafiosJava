@@ -25,6 +25,7 @@ bin/
 
 ### VS Code ###
 .vscode/
+.devcontainer/
 
 ### Mac OS ###
 .DS_Store

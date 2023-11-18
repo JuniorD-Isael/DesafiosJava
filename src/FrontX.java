@@ -6,13 +6,32 @@
 // Dica: Isso pode ser resolvido criando 2 listas e ordenando cada uma
 // antes de combiná-las.
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class FrontX {
 
     public static List<String> frontX(List<String> words) {
+        
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        List<String> wordsNoStartX = new LinkedList<>();
+        List<String> wordsStartX = new LinkedList<>();
+        List<String> wordsSort = new LinkedList<>();
+
+        for (String word : words) {
+            if (word.charAt(0) != 'x') {
+                wordsNoStartX.add(word);
+            }else{
+                wordsStartX.add(word);
+            }
+        }
+
+        wordsNoStartX.sort((a,b) -> a.compareTo(b));
+        wordsStartX.sort((a,b) -> a.compareTo(b));
+
+        wordsSort.addAll(wordsStartX);
+        wordsSort.addAll(wordsNoStartX);
+        return wordsSort;
     }
 
     // Função de teste

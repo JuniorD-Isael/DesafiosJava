@@ -10,7 +10,15 @@ public class MatchEnds {
 
     public static int matchEnds(List<String> words) {
         // +++ SUA SOLUÇÃO +++
-        return 0; // Retorna 0 temporariamente, você precisará implementar essa lógica
+        int result = 0;
+
+        for (String word : words) {
+            if (word.length() >= 2 && word.charAt(0) == word.charAt(word.length()-1)) {
+                result++;
+            }
+        }
+
+        return result;
     }
 
     // Função de teste

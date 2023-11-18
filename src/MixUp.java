@@ -11,7 +11,11 @@ public class MixUp {
 
     public static String mixUp(String a, String b) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+        return String.format("%s%s %s%s", 
+        b.substring(0, 2), 
+        a.substring(2), 
+        a.substring(0, 2), 
+        b.substring(2));
     }
 
     // Função de teste
@@ -21,24 +25,25 @@ public class MixUp {
         if (out.equals(expected)) {
             System.out.println("✅ " + f.getClass().getSimpleName() + "(" + in[0] + ", " + in[1] + ") retornou " + out);
         } else {
-            System.out.println("❌ " + f.getClass().getSimpleName() + "(" + in[0] + ", " + in[1] + ") retornou " + out + " e o correto é " + expected);
+            System.out.println("❌ " + f.getClass().getSimpleName() + "(" + in[0] + ", " + in[1] + ") retornou " + out
+                    + " e o correto é " + expected);
         }
     }
 
     public static void main(String[] args) {
         // Testes
         String[][] inputs = {
-            {"mix", "pod"},
-            {"dog", "dinner"},
-            {"gnash", "sport"},
-            {"pezzy", "firm"}
+                { "mix", "pod" },
+                { "dog", "dinner" },
+                { "gnash", "sport" },
+                { "pezzy", "firm" }
         };
 
         String[] expectedOutputs = {
-            "pox mid",
-            "dig donner",
-            "spash gnort",
-            "fizzy perm"
+                "pox mid",
+                "dig donner",
+                "spash gnort",
+                "fizzy perm"
         };
 
         for (int i = 0; i < inputs.length; i++) {

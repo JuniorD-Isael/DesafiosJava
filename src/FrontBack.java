@@ -8,9 +8,23 @@
 
 public class FrontBack {
 
+    public static String[] separationString(String s){
+        int division = s.length()/2 + s.length() % 2;
+        String[] parts = new String[2];
+        parts[0] = s.substring(0, division);
+        parts[1] = s.substring(division, s.length());
+        return parts;
+    }
+
     public static String frontBack(String a, String b) {
         // +++ SUA SOLUÇÃO +++
-        return null; // Retorna null temporariamente, você precisará implementar essa lógica
+
+        String[] partsA, partsB;
+
+        partsA = separationString(a);
+        partsB = separationString(b);
+
+        return String.format("%s%s%s%s", partsA[0], partsB[0], partsA[1], partsB[1]);
     }
 
     // Função de teste
